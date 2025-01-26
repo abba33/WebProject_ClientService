@@ -46,7 +46,7 @@ const ProductForm = () => {
     if (id) {
       const fetchProduct = async () => {
         try {
-          const response = await axios.get(`https://webproject-productservice.onrender.com${id}`, {
+          const response = await axios.get(`https://webproject-productservice.onrender.com/${id}`, {
             headers: {
               Authorization: `Bearer ${authState.token}`,
             },
