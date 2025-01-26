@@ -113,8 +113,8 @@ const handleImageUpload = async (event) => {
 
     try {
       const url = id
-        ? `https://webproject-productservice.onrender.com/${id}`
-        : 'https://webproject-productservice.onrender.com/create';
+        ? `https://webproject-productservice.onrender.com/product/${id}`
+        : 'https://webproject-productservice.onrender.com/product/create';
       const method = id ? 'PUT' : 'POST';
 
       const response = await axios({
